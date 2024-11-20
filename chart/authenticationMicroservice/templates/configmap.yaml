@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cumulusbankauth
+  namespace: {{ .Values.namespace }}
+data:
+  DATABASE: SAMPLE
+  PORT: '3306'
+  HOST: 'md-bank-bank-maria-ocp1-maria.cumulusbank'
+  PROTOCOL: TCPIP   
