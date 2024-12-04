@@ -20,8 +20,8 @@ class App {
     this.jwtOptions.jwtFromRequest = this.ExtractJwt.fromAuthHeaderAsBearerToken();
     this.jwtOptions.secretOrKey = "SECRET";
     this.connectionString = {
-      host: "localhost",
-      user: "root",
+      host: "mariadb",
+      user: "meerath",
       password: "gymhw6xf",
       database: "LOGIN",
       connectionLimit: 5,
