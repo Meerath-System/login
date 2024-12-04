@@ -22,10 +22,12 @@ class App {
     this.connectionString = {
       host: "localhost",
       user: "root",
-      password: "admin",
+      password: "gymhw6xf",
       database: "LOGIN",
       connectionLimit: 5,
-      port: "3306"
+      port: "3306",
+      ssl: false,
+      allowPublicKeyRetrieval: true
     };
     this.pool = mariadb.createPool(this.connectionString);
     console.log(this.connectionString);
